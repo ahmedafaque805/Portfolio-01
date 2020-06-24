@@ -57,7 +57,9 @@ header nav .branding{
 }
 
 .hero .left img {
-    width: 300px;
+    width: 500px;
+    height: 550px;
+    margin-top: -6rem;
 }
 
 .hero .right1 {
@@ -88,3 +90,61 @@ header nav .branding{
 .hero .right1 {
     margin-top: -7rem;
 }
+
+.about {
+    padding: 6rem 0;
+}
+
+section.about .pic {
+    width: 400px;
+    height: 450px;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+} 
+
+section.about p{
+    font-family: 'lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+section.about .social{
+    display: flex;
+}
+
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+
+section.about .social a:hover{
+    background: var(--primary);
+}
+
+section.about .social i{
+   color: white;
+}
+
+
