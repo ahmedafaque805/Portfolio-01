@@ -22,7 +22,7 @@ body{
 
 header{
     background-color: var(--dark);
-    height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 90%, 0 100%);
 }
 
 
@@ -52,3 +52,39 @@ header nav .branding{
     margin-right:3rem;
 }
 
+.hero{
+    padding: 3rem 0;
+}
+
+.hero .left img {
+    width: 300px;
+}
+
+.hero .right1 {
+    color: var(--pure);
+}
+
+.hero .right1 h6{
+    font-size: 1rem ;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right1  h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right1 h1 span{
+    color: var(--primary);
+}
+
+.hero .right1 p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.hero .right1 {
+    margin-top: -7rem;
+}
