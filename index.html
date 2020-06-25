@@ -6,11 +6,16 @@
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/6310f9a9fb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-      
+
+
+    <!-- ------------------------------ Header Start -------------------------------------- -->
+
+
      <header>
          <div class="container">
         <nav class="flex items-center justify-between">
@@ -20,9 +25,9 @@
             </div>
             <div>
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Pages</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
                 <a href="#">Blog</a>
             </div>
             </div>
@@ -49,7 +54,14 @@
     </div>
     </header>
 
-    <section class="about">
+
+    <!-- ------------------------------ Header End ---------------------------------------- -->
+
+
+    <!-- ------------------------------ About Section Start ------------------------------- -->
+
+
+    <section id="about" class="about">
         <div class="container flex items-center">
             <div class="flex-1">
                 <img class="pic" src="images/afaq.jpg" style="border: 10px #3DCFD3 solid;">
@@ -70,7 +82,172 @@
     </section>
 
 
+    <!-- ------------------------------ About Section End --------------------------------- -->
 
+
+    <!-- ------------------------------ Services Section Start ---------------------------- -->
+
+
+    <section id="services" class="services">
+        <div class="container">
+            <h1 class="section-heading"> <span>Our</span> Services </h1>
+            <p>We provide high standar clean Website for your business Solutions</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="images/paint-brush.svg" width="50px">
+                    <h1>Graphic Designer</h1>
+                    <p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/code.svg" width="50px">
+                    <h1>Web Developmnet</h1>
+                    <p>We don't just sell websites, we create websites that SELL.</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/portfolio.svg" width="50px">
+                    <h1>Media Marketing</h1>
+                    <p>Marketers need to build digital relationships and reputation before closing a sale.</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/laptop.svg" width="50px">
+                    <h1>Web Design</h1>
+                    <p>Web design is not just about creating pretty layouts. It’s about understanding the marketing challenge behind your business.</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/film-reel.svg" width="50px">
+                    <h1>Motion graphic</h1>
+                    <p>Good design is like a refrigerator—when it works, no one notices, but when it doesn’t, it sure stinks</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/smartphone.svg" width="50px">
+                    <h1>Apps</h1>
+                    <p>We have something very valuable, for which we have not yet found an application in this life</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------------ Services Section End ------------------------------ -->
+
+
+    <!-- ------------------------------ Freelancer Section Start--------------------------- -->
+
+
+    <section class="freelancer">
+      <h1>I Am Available For Freelancer.</h1>
+      <p>We provide high standar clean website for your business solutions</p>
+      <button class="btn btn-primary">DOWNLOAD CV</button>
+    </section>
+
+
+    <!-- ------------------------------ Freelancer Section End ---------------------------- -->
+
+    <!-- ------------------------------ Client Section Start ------------------------------ -->
+
+
+    <section class="reviews">
+        <div class="container">
+            <h1 class="section-heading"><span>Our</span> Client</h1>
+            <p>We provide high standar clean website for your business solutions</p>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./images/bilal.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <span>-Bilal Mir, UBIT</span>
+                </div>
+
+                <div class="slide">
+                    <img src="./images/faheem.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <span>-Faheem-uz-Zaman, PanaCloud</span>
+                </div>
+
+                <div class="slide">
+                    <img src="./images/areeb.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <span>-Areeb Siddiqui, PIAIC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------------ Client Section End -------------------------------- -->
+
+
+    <!-- ------------------------------ Work Section Start -------------------------------- -->
+
+
+    <section id="work" class="work">
+        <div class="container">
+           <h1 class="section-heading"><span>Our</span> Works</h1>
+          <p>We provide high standar clean website for your business solutions</p>
+ 
+          <div class="card-wrapper">
+              <div class="card">
+                  <div class="overlay">
+                      <span>Category</span>
+                      <a href="#">Web Development</a>
+                  </div>
+                  <img src="./images/ph-1.png" alt="">
+              </div>
+
+
+            <div class="card">
+                <div class="overlay">
+                    <span>Category</span>
+                    <a href="#">Web Design</a>
+                </div>
+                <img src="./images/ph-2.png" alt="">
+            </div>
+
+
+            <div class="card">
+                <div class="overlay">
+                    <span>Category</span>
+                    <a href="#">Mobile Applications</a>
+                </div>
+                <img src="./images/ph-3.png" alt="">
+            </div>
+
+
+            <div class="card">
+                <div class="overlay">
+                    <span>Category</span>
+                    <a href="#">Graphic Designing</a>
+                </div>
+                <img src="./images/18697.jpg" alt="">
+            </div>
+
+
+            <div class="card">
+                <div class="overlay">
+                    <span>Category</span>
+                    <a href="#">Web Hosting</a>
+                </div>
+                <img src="./images/18707.jpg" alt="">
+            </div>
+
+
+            <div class="card">
+                <div class="overlay">
+                    <span>Category</span>
+                    <a href="#">Web Deploying</a>
+                </div>
+                <img src="./images/ph-4.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
+  
+
+    <!-- ------------------------------ Work Section End ---------------------------------- -->
 
 
 </body>

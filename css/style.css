@@ -6,11 +6,16 @@
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#F2F2F2;
+    --secondary:#070606;
 
 }
 
 body{
     font-family: 'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -19,6 +24,8 @@ body{
     box-sizing: border-box;
     -webkit-font-smotthing:antialiased;
 }
+
+/* ******************************  Header Start  ******************************************* */
 
 header{
     background-color: var(--dark);
@@ -51,6 +58,15 @@ header nav{
 header nav .branding{
     margin-right:3rem;
 }
+
+
+/* ******************************  Header End  ********************************************* */
+
+
+
+/* ******************************  About Section Start  ************************************ */
+
+
 
 .hero{
     padding: 3rem 0;
@@ -148,3 +164,204 @@ section.about .social i{
 }
 
 
+
+/* ******************************  About Section End  ************************************** */
+
+
+/* ******************************  Services Section Start  ********************************* */
+
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+section.services{
+    background: var(--light);
+}
+
+section.services .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+}
+
+section.services .section-heading{
+    padding-top: 70px;
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    margin-bottom: 4rem;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.services .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem ;
+}
+
+section.services .card-wrapper .card p{
+    font-family: 'lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h1, section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+
+/* ******************************  Services Section End  *********************************** */
+
+/* ******************************  Freelancer Section Start ******************************** */
+
+
+section.freelancer {
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 9rem;
+    padding-top: 4rem;
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'lato',sans-serif;
+}
+
+
+/* ******************************  Freelancer Section End  ********************************* */
+
+
+/* ******************************  Client Section Start  *********************************** */
+
+
+section.reviews .slider .slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+section.reviews .slider .slide p{
+    font-family: 'lato',sans-serif;
+    color: #898989;
+    margin-bottom: 1rem;
+}
+
+section.reviews .slider .slide span{
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+section.reviews {
+    margin-top: 5rem;
+}
+
+
+/* ******************************  Client Section End  ************************************* */
+
+
+/* ******************************  Work Section Start  ********************************* */
+
+
+
+section.work {
+    background: var(--light);
+}
+
+
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61, 207, 211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all .3s ease;
+
+}
+
+section.work .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+}
+
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+section.work .section-heading{
+    padding-top: 70px;
+}
+
+
+/* ******************************  Work Section End  *************************************** */
