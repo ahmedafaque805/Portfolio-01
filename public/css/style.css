@@ -39,26 +39,6 @@ header{
     margin: 0 auto;
 }
 
-header nav .left a{
-    color: var(--pure);
-    text-decoration: none;
-    margin-right: 2rem;
-    text-transform:uppercase ;
-    transition: all .3s ease;
-}
-
-header nav .left a:hover{
-    color:var(--primary) ;
-}
-
-header nav{
-    padding: 2rem 0;
-}
-
-header nav .branding{
-    margin-right:3rem;
-}
-
 
 /* ******************************  Header End  ********************************************* */
 
@@ -386,49 +366,12 @@ section.blog .section-heading{
 section.blog .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
-}
-
-section.blog .card-wrapper .card{
-    background: var(--pure);
+    grid-gap: 2rem;
 }
 
 
-section.blog .card-wrapper .card .card-content {
-    padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-
-section.blog .card-wrapper .card-content h1{
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-section.blog .card-wrapper .card-content a{
-    color: var(--secondary);
-    text-decoration: none;
-}
-
-section.blog .card-wrapper .card-content span{
-    color: var(--ternary);
-    font-size: 0.8rem;
-}
-
-section.blog .card-wrapper .card-content p{
-    font-family: 'lato',sans-serif;
-    color: var(--ternary);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-section.blog .card-wrapper .card-content a.read-more{
-    font-size: 0.8rem;
-}
-
-section.blog .card-wrapper .card-content a:hover{
-    color: var(--primary);
+section.blog .card-wrapper .card a:hover{
+    color: var(--primary) !important;
 }
 
 section.blog .section-heading{
@@ -457,29 +400,13 @@ section.contact .card-wrapper {
     
 }
 
-section.contact .card-wrapper .card {
+section.contact .card-wrapper .cardC {
     text-align: center;
-}
-
-section.contact .card-wrapper .card img{
-    margin-bottom: 3rem;
-}
-
-section.contact .card-wrapper .extra img{
-    margin-bottom:4rem;
-}
-
-section.contact .card-wrapper .card h1{
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
-
-section.contact .card-wrapper .card h6{
-    font-size: 1rem;
-    color: var(--ternary);
-    font-weight: 400;
     margin-bottom: 4rem;
 }
+
+
+
 
 section.contact .section-heading{
     padding-top: 70px;
@@ -563,3 +490,135 @@ footer .footer-socials{
 
 
 /* ****************************** Footer Section End  ************************************** */
+
+
+
+@media (max-width: 576px){
+   
+   .hero{
+       flex-direction: column;
+   }
+   header{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 96%, 0 100%);
+   }
+   .hero .right1{
+       position: absolute;
+       top: 260px;
+       padding: 0 1rem;
+       margin-top: -9rem !important;
+       
+   }
+   .hero .left{
+       margin-top: 0rem;
+       margin-right: -9rem;
+       padding-bottom: 4rem;
+       opacity: 35%;
+   }
+   .about-wrapper{
+       margin-top: -3rem !important;
+       flex-direction: column;
+   }
+   .about-right{
+       text-align: center;
+       margin-top: 1rem;
+   }
+   section.about .social{
+       justify-content: center;
+       margin-bottom: -3rem ;
+   }
+   section.services .card-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   section.services .card-wrapper .card{
+       margin-bottom: -1rem;
+   }
+   section.services .card-wrapper .last{
+    margin-bottom: 2rem !important;
+   }
+   section.freelancer{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 90%, 0 100%);
+    padding-bottom: 4rem;
+   }
+   section.reviews .slider .slide{
+       padding: 0 0;
+   }
+   section.reviews .slider .slide .bilal{
+    margin-top: -3rem;
+   }
+   section.work .card-wrapper{
+    grid-template-columns: repeat(1,1fr);
+    margin-top: -3rem;
+   }
+   section.blog .card-wrapper{
+    grid-template-columns: repeat(1,1fr);
+   }
+   section.blog{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 78% 97%, 0 100%);
+   }
+   section.contact .card-wrapper{
+    grid-template-columns: repeat(1,1fr);
+   }
+   section.contact .card-wrapper .cardC{
+       margin-bottom: 2rem;
+       margin-top: -3rem;
+   }
+   section.contact .input-wrap{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   footer .copyright{
+       padding: 1rem;
+   }
+}
+
+
+
+@media (max-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+
+
+@media (max-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .container {
+        max-width: 1152px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 993){
+    .hero .left img {
+        width: 260px;
+    }
+    .hero .right1 h1 {
+        font-size: 3rem;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+    }
+    section.about .pic{
+        height: 380px;
+        width: 311px;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.work .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.blog .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.blog div{
+        width: 43rem;
+    }
+    section.blog{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 78% 97%, 0 100%);
+    }
+ }
